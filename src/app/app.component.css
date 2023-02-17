@@ -1,0 +1,301 @@
+.header{
+  box-sizing: border-box;
+  margin-bottom: -200px;
+  position: relative;
+  z-index: 999;
+}
+.my-2{
+  border-top: 1px solid #FFFFFF2E;
+}
+.hleft > div > img{
+  float: left;
+}
+.nav  >li{
+  font-size: 16px;
+}
+.nav >li >p {
+  font-size: 14px;
+  color: white;
+}
+.nav >li > a{
+  font-size: 14px;
+}
+.nav >li >span>a{
+  font-size: 14px;
+}
+ul >li  > i{
+  padding: 0 5px;
+  color: #19cbe4;
+}
+ul >li  > p{
+  padding-right: 15px;
+
+}
+ul >li >span > i{
+  padding: 0 10px;
+  color: #19cbe4;
+}
+.hright>ul{
+  float: right;
+}
+.hright > ul > li{
+  float: left;
+  padding: 0 5px;
+}
+
+.nav > li{
+  position: relative;
+}
+.nav > li >span::before{
+  content: "";
+  height: 1px;
+  width: 15px;
+  background-color: #19cbe4;
+  position: absolute;
+  top:35%;
+  left: 0;
+}
+.nav > li >span{
+  padding-left: 15px;
+}
+.col-3 > img{
+  height: 63px;
+  width:180px;
+
+}
+.nav>li>a:focus{
+  color:  #19cbe4;
+}
+.nav {
+  height: 150%;
+}
+.categories{
+  margin-top: 19px;
+}
+.categories > ul >li{
+  padding: 0px 15px;
+
+}
+.categories >ul >li:last-child{
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  padding-right: 0;
+}
+.categories >ul>li>i{
+  color: white;
+
+}
+.dropdown:hover > ul{
+  margin-top: 25px;
+  display: block;
+}
+.nav-column{
+  position: relative;
+}
+.nav-column>ul{
+  padding: 10px 10px 10px 10px;
+  background-color: #1D252B;
+  border-radius: 0px 0px 0px 0px;
+  min-width: 220px
+}
+.nav-column >.nav-item{
+  position: absolute;
+  background-color: black;
+  width: 200px;
+  margin-top: 25px;
+}
+.nav-column li{
+ padding: 15px;
+}
+.nav-column >.nav-item> li >a{
+  padding: 8px 15px;
+
+}
+
+.nav-item >li{
+  border: 2px solid white;
+
+}
+.nav-item >li:hover{
+  border: 2px solid #19cbe4;
+}
+.nav-item:hover >li{
+  background-color: black !important;
+}
+.nav-item>li:hover>a{
+  color: #19cbe4;
+}
+.dropdown-toggle::after{
+  display: none;
+}
+/*footer*/
+.footer{
+  background-color: #1d252b;
+}
+
+.info{
+  align-items: center;
+  align-content: center;
+}
+.f-icon > i{
+  background-color: #19cbe4;
+  padding: 10px 13px;
+  color: black;
+  border: 1px solid #19cbe4 ;
+}
+
+.f-icon:hover>i{
+  color: white;
+}
+.f-icon:hover>i{
+  background-color: black;
+  border: 1px solid #19cbe4 ;
+}
+.location{
+  text-align: left;
+  color: white;
+}
+.location >h5{
+  font-size: 20px ;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+.location>span{
+  font-size: 10px;
+}
+.el-1{
+  flex-direction: column;
+  text-align: left;
+}
+.el-1>div>img{
+  width: 143px;
+  height: 63px;
+}
+.el-1>div>p{
+  font-size: 12px;
+  text-align: left;
+  color: white;
+}
+.i-media>li{
+  padding-right: 7px;
+}
+.i-media>li:first-child>i{
+  background-color: #19cbe4;
+  color: black;
+  border: 1px solid #19cbe4 ;
+}
+.i-media>li>i{
+  color: white;
+  border: 1px solid #19cbe4 ;
+  transform: scale(-0.5, 1);
+}
+
+.i-media>li:hover>i{
+  color: black;
+  background-color: #19cbe4;
+}
+.li-link >h5{
+  font-weight: 600;
+  color: white;
+}
+.li-link >ul >li{
+  position: relative;
+
+}
+.li-link>ul >li::before{
+  content: "";
+  height: 1px;
+  width: 15px;
+  background-color: #19cbe4;
+  position: absolute;
+  top:50%;
+  left: 25%;
+}
+.li-link a{
+  font-size: 14px;
+}
+.li-link a:hover{
+  color: #19CBE4;
+}
+.subscribe{
+  text-align: left;
+}
+.subscribe>div>h5{
+  font-weight: 600;
+  color: white;
+}
+.subscribe>div>p{
+  font-size: 12px;
+  color: white;
+}
+.mess{
+  align-items: center;
+  align-content: center;
+}
+.col-9>input{
+  padding: 10px 15px;
+  font-weight: 200;
+  font-size: 14px;
+}
+.i-mess{
+  align-items: center;
+  position: relative;
+}
+.i-mess >i{
+  padding: 12px 18px;
+  color: #1D252B;
+  background-color: #19CBE4;
+}
+
+/*endfooter*/
+.f-img >div{
+  padding: 0;
+  margin-top: 100px;
+}
+.col-2{
+  position: relative;
+}
+.over-lay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  background-image: linear-gradient(160deg, #19CBE4 0%, #051F23 75%);
+  cursor: pointer;
+}
+.i-con{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.i-con > i{
+  font-size: 40px;
+  color: white;
+}
+
+.col-2:hover .over-lay{
+  opacity: 0.8;
+}
+.end-footer div:first-child{
+  text-align: left;
+  color: white;
+  font-size: 14px;
+  padding:0;
+}
+.end-footer div:last-child{
+  text-align: right;
+  color: white;
+  font-size: 14px;
+  padding:0;
+}
+.br-top{
+  border-top: 1px solid #29353d;
+  margin-bottom: 10px;
+  padding-top: 20px;
+}

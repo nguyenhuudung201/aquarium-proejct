@@ -1,0 +1,116 @@
+<section class="section ">
+  <div class="slider">
+    <div class="over-lay"></div>
+    <div class="container title">
+      <h1>FAQ</h1>
+      <div class="line my-3"></div>
+      <div>
+        <ul class="nav">
+          <li>Home</li>
+          <li> <i class="bi bi-chevron-double-right"></i></li>
+          <li>FAQ</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section my-5">
+  <div class="container">
+    <div class="content">
+      <ul>
+        <li><p>Client Inquries</p></li>
+        <li> <div class="line"></div></li>
+        <li> <h1>Related Questions</h1></li>
+        <li> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod t
+          empor incididunt ut labore et dolore magna aliqua. Ut <br> enim ad minim veniam dolore aliqua.</p></li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="section">
+ <div class="container">
+   <div class="row">
+     <div class="col-6 question">
+       <ul>
+         <li>
+             <div class="toggle" ngbDropdown>
+                 <button type="button"ngbDropdownToggle>
+                   <div>
+                    <i class="bi bi-plus-lg"></i> What are your opening hours?
+                   </div>
+                 </button>
+                 <div class="text" ngbDropdownMenu>
+                   <div >
+                     <p ngbDropdownItem>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <br>
+                       Aenean commodo ligula eget dolor. Aenean massa.
+                       Cum <br>sociis natoque penatibus et magnis dis parturient montes.</p>
+                   </div>
+                 </div>
+             </div>
+         </li>
+         <li>
+           <div ngbDropdown>
+             <button type="button"ngbDropdownToggle>
+               <div>
+                 <i class="bi bi-plus-lg"></i> What are your opening hours?
+               </div>
+             </button>
+             <div class="text" ngbDropdownMenu>
+               <div >
+                 <p ngbDropdownItem>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <br>
+                   Aenean commodo ligula eget dolor. Aenean massa.
+                   Cum <br>sociis natoque penatibus et magnis dis parturient montes.</p>
+               </div>
+             </div>
+           </div>
+         </li>
+
+         <li>
+           <div ngbDropdown>
+             <button type="button" ngbDropdownToggle>
+               <div>
+                 <i class="bi bi-plus-lg"></i> What are your opening hours?
+               </div>
+             </button>
+             <div class="text" ngbDropdownMenu>
+               <div >
+                 <p ngbDropdownItem>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <br>
+                   Aenean commodo ligula eget dolor. Aenean massa.
+                   Cum <br>sociis natoque penatibus et magnis dis parturient montes.</p>
+               </div>
+             </div>
+           </div>
+         </li>
+       </ul>
+     </div>
+     <div class="col-6">
+      <div class="container">
+       <div class="menu-toggler" (click)="toggleMenu1()"> toggleMenu </div>
+        <div class="menu" *ngIf="isMenuOpened1">
+          <div class="menu-item">sdfdsfasf</div>
+          <div class="menu-item">asdfasd</div>
+          <div class="menu-item"> adfsdfsdds </div>
+        </div>
+        <div class="menu-toggler" (click)="toggleMenu2()"> toggleMenu </div>
+        <div class="menu" *ngIf="isMenuOpened2">
+          <div class="menu-item">sdfdsfasf</div>
+          <div class="menu-item">asdfasd</div>
+          <div class="menu-item"> adfsdfsdds </div>
+        </div>
+        <div class="menu-toggler" (click)="toggleMenu3()"> toggleMenu </div>
+        <div class="menu" *ngIf="isMenuOpened3">
+          <div class="menu-item">sdfdsfasf</div>
+          <div class="menu-item">asdfasd</div>
+          <div class="menu-item"> adfsdfsdds </div>
+        </div>
+        <div class="menu-toggler" (click)="toggleMenu4()"> toggleMenu </div>
+        <div class="menu" *ngIf="isMenuOpened4">
+          <div class="menu-item">sdfdsfasf</div>
+          <div class="menu-item">asdfasd</div>
+          <div class="menu-item"> adfsdfsdds </div>
+        </div>
+      </div>
+   </div>
+   </div>
+ </div>
+</section>

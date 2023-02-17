@@ -1,0 +1,743 @@
+.slider{
+  background-image: url("../../assets/images/turtle-in-the-glass-cabinet-aquarium--e1628654625307.jpg");
+  background-position: 0px 65%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 0px;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 450px 200px ;
+  position: relative;
+  color: white;
+  font-weight: 600;
+}
+.over-lay{
+  background-color: #082441;
+  opacity: 0.5;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.title{
+  text-align: left;
+  padding: 0;
+  margin-left: -90px;
+  margin-top: -150px;
+}
+.title ul{
+  padding: 0;
+}
+.title li{
+  padding-top: 15px;
+}
+.title h5{
+  font-weight: 600;
+  font-size: 18px;
+}
+.title h1{
+  font-size: 50px;
+  font-weight: 600;
+}
+.title p{
+  font-weight: 400;
+}
+.line{
+  width: 35px;
+  height: 2px;
+  background-color: #19CBE4;
+}
+.Started{
+  margin-right: 10px;
+  background-color: #19CBE4;
+  padding: 20px 50px;
+}
+.Started:hover{
+  background-color: #1CAFC4;
+
+}
+.Started a{
+  color: black;
+}
+.Read{
+  border: 1px solid white;
+  padding: 20px 50px;
+}
+.Read:hover{
+  background-color: black;
+}
+.Read:hover>a{
+  color: #19CBE4;
+}
+.slider-under{
+
+  margin-top: -260px;
+
+}
+.content{
+  background-color: #82FFDB1C;
+  text-align: left;
+  width: 33.333%;
+  margin-top: 50px;
+}
+
+.content li{
+  padding-top: 15px;
+}
+.content h5{
+  color: white;
+  font-weight: 600;
+  font-size: 25px;
+}
+.content p{
+  color: white;
+}
+.content a{
+  color: #19CBE4;
+  font-weight: 600;
+}
+.content a:hover{
+  color: #1CAFC4 ;
+}
+.content-img{
+  padding: 0;
+  margin-top: 0;
+}
+.content-img img{
+
+}
+.about-img{
+  padding: 0;
+  box-shadow: 100px 45px 0px -45px #1d252b;
+  position: relative;
+}
+.i-play{
+  position: absolute;
+  right: 37%;
+  color: #19CBE4;
+  font-size: 60px;
+  top: 87%;
+  z-index: 30;
+  cursor: pointer;
+
+}
+.play-content{
+  position: absolute;
+  right: 0;
+  top: 86%;
+  padding: 20px 50px 6px 60px;
+  background-color: #1D252B;
+}
+.play-content h1{
+  font-weight: 600;
+  font-size: 40px;
+  color: white;
+}
+.play-content i{
+  color: #19CBE4;
+  font-size: 30px;
+}
+.play-content p{
+  color: #19CBE4;
+}
+.about-content{
+  text-align: left;
+  padding-left: 7rem;
+}
+.about-content ul{
+  padding: 0;
+}
+.about-content li{
+  padding-top: 15px;
+}
+.about-content h5{
+  color: black;
+  font-weight: 600;
+}
+.about-content h1{
+  color: black;
+  font-weight: 600;
+}
+.about-content p{
+  font-size: 15px;
+}
+.under-content ul{
+  padding: 0;
+}
+.under-content li{
+  padding-top: 10px;
+}
+.under-content i{
+  color: #19CBE4;
+  font-size: 50px;
+}
+.under-content h5{
+  color: black;
+  font-weight: 600;
+}
+.under-content a{
+  color: #19CBE4;
+  font-weight: 600;
+}
+.under-content a:hover{
+  color: black;
+}
+.img-sign{
+  padding: 0;
+}
+.img-sign img{
+  border-radius: 50%;
+}
+.sign-img h5{
+  font-size: 14px;
+}
+.sign-img h3{
+  font-size: 20px;
+}
+.content-sign{
+  position: relative;
+}
+.content-sign img{
+  opacity:0.18;
+  position: absolute;
+  left: 0;
+  top: -16px;
+}
+.content-sign ul{
+  position: relative;
+}
+.content-sign li{
+  padding: 0;
+}
+.content-sign h5 {
+  font-size: 20px;
+}
+.slider-categories{
+  box-sizing: border-box;
+}
+.slider-categories ul{
+  padding: 0;
+}
+.slider-categories li{
+  padding-top: 20px;
+}
+.slider-categories img{
+  width: 50%;
+}
+.slider-categories h5{
+  color: black;
+  font-weight: 600;
+}
+/*services*/
+.services{
+  background-color: #1d252b;
+  padding: 0;
+  text-align: left;
+}
+.services-full{
+  padding: 0 60px;
+  height: auto;
+}
+.services-full ul{
+  padding: 0;
+}
+.services-img{
+  padding: 0;
+  text-align: left;
+
+  /*background-image: url("../../assets/images/different-tropical-fish-on-a-coral-reef-in-the-red-sea-e1628654765211.jpg");*/
+}
+.services-img >img{
+
+}
+.bg-img-1{
+  height:750px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/images/different-tropical-fish-on-a-coral-reef-in-the-red-sea-e1628654765211.jpg");
+}
+.services>div>ul>li{
+  padding-top: 15px;
+}
+.services>div>ul>li:first-child{
+  padding-top: 30px;
+  padding-bottom: 0px;
+}
+.services>div>ul>li>h5{
+  color: white;
+  font-weight: 600;
+}
+.services>div>ul>li>h1{
+  color: white;
+  font-weight: 600;
+}
+.content-services{
+  text-align: left;
+}
+
+.content-services i{
+  color: #19CBE4;
+  text-align: center;
+  font-size: 100px;
+}
+.content-services li{
+  padding-top: 15px;
+}
+.content-services h1{
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+.content-services>ul>li>a{
+  border: none;
+  color: #19CBE4;
+  font-weight: 600;
+
+}
+.content-services>ul>li>a:hover{
+  position: relative;
+  top: 10px;
+}
+/*endslider*/
+/*categories*/
+
+.el-1 > ul{
+  text-align: left;
+  background-color: #19CBE4;
+  padding: 35px 30px;
+}
+.el-1>ul>li{
+  padding-top: 10px;
+}
+.el-1>ul>li>i{
+  color: black;
+  font-size: 40px;
+}
+.el-1>ul>li>h5{
+  color: #1d252b;
+  font-weight: 600;
+  font-size: 20px;
+}
+.el-1>ul>li>p{
+  color: #1d252b;
+  font-size: 14px;
+  font-weight: 500;
+}
+.el-1>ul>li>a{
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+}
+.el-2 >ul{
+  text-align: left;
+  padding: 35px 30px;
+}
+.el-2 > ul:hover{
+  background-color: #19CBE4;
+}
+.el-2:hover>ul>li>a{
+  color: #1d252b;
+}
+.el-2>ul>li{
+  padding-top: 10px;
+}
+.el-2>ul>li>i{
+  color: black;
+  font-size: 40px;
+}
+.el-2>ul>li>h5{
+  color: #1d252b;
+  font-weight: 600;
+  font-size: 20px;
+}
+.el-2>ul>li>p{
+  color: #1d252b;
+  font-size: 14px;
+  font-weight: 500;
+}
+.el-2>ul>li>a{
+  color: #19CBE4;
+  font-size: 15px;
+  font-weight: 600;
+}
+.content-2{
+  text-align: left;
+}
+.content-2>ul>li:first-child{
+  padding-top: 0;
+}
+.content-2>ul>li:last-child{
+  padding-top: 30px;
+}
+.content-2 >ul>li{
+  padding-top: 15px;
+}
+.content-2>ul>li>h5{
+  font-weight: 500;
+  color: black;
+}
+.content-2>ul>li>h1{
+  font-weight: 600;
+  color: black;
+}
+.content-2 >ul>li>button{
+  padding: 20px 45px;
+  border: none;
+  background-color: #19CBE4;
+  font-weight: 600;
+}
+.content-2 >ul>li:hover>button{
+   background-color: #1d252b;
+   color: #19CBE4;
+ }
+/*endcategories*/
+.name {
+  border-right: 1px solid #868686 ;
+  padding: 0;
+}
+.name h1{
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+
+}
+.name:hover >h1{
+  color: black;
+}
+.testimonial{
+  text-align: center;
+  padding-top: 100px;
+
+}
+.testimonial .line{
+  position: relative;
+  left: 48%;
+  width: 41px;
+}
+.testimonial h6{
+  color: black;
+  font-weight: 500;
+}
+.testimonial h1{
+  font-weight: 600;
+  color: black;
+}
+.testimonial p{
+  padding: 0 20%;
+  font-size: 14px;
+  color: black;
+}
+.comment{
+  text-align: left;
+  padding:10px 0px;
+}
+.comment li:last-child {
+  padding-top: 15px;
+}
+.comment p{
+  font-size: 20px;
+  font-style: oblique;
+}
+.comment h5{
+  font-weight: 600;
+  color: black;
+}
+.comment-img {
+  padding: 0;
+}
+.comment-2{
+  text-align: left;
+  padding:10px 0px;
+}
+.comment-2 li:first-child {
+  padding-top: 20px;
+}
+.comment-2 li:last-child{
+  padding-top: 15px;
+}
+.comment-2 p{
+  font-size: 20px;
+  font-style: oblique;
+}
+.comment-2 h5{
+  font-weight: 600;
+  color: black;
+}
+.comment-img-1{
+  padding: 0;
+}
+.comment-img-1 >img{
+  width: 285px;
+  height: 285px;
+}
+.comment-1{
+  text-align: left;
+  padding:10px 0px;
+}
+.comment-1 li:first-child {
+  padding-top: 20px;
+}
+.comment-1 li:last-child{
+  padding-top: 15px;
+}
+.comment-1 p{
+  font-size: 20px;
+  font-style: oblique;
+}
+.comment-1 h5{
+  font-weight: 600;
+  color: black;
+}
+.bg-img{
+  background-image: url("../../assets/images/family-watchig-fishes-at-a-aquarium-e1628654789954.jpg");
+  width: 106%;
+  height: 960px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.slider-respond{
+  width: 550px;
+  height: 264px;
+  position: absolute;
+  right: 5%;
+  bottom: 15%;
+
+}
+.respond{
+  background-color: white;
+  text-align: left;
+  padding:20px 60px 40px 60px;
+}
+.respond li{
+  padding-top: 20px;
+}
+.respond p{
+  color: #7F7F7F;
+}
+.respond i{
+  padding-left: 5px;
+  color: yellow;
+}
+.respond i:first-child{
+  padding: 0;
+}
+.respond img{
+  border-radius: 50%;
+}
+.profile-name{
+  padding: 0;
+  margin-top: 5px;
+}
+.profile-name ul{
+  padding: 0;
+}
+.profile-name h5{
+  font-weight: 600;
+  color: black;
+}
+.profile-name p{
+  color: #19CBE4;
+}
+.profile-name li{
+  padding: 0;
+}
+.mg-top{
+  margin-top: 100px;
+}
+
+.new-title{
+  padding: 0;
+  text-align: left;
+}
+.new-title ul{
+  padding: 0;
+}
+.new-title h5{
+  color: black;
+  font-weight: 400;
+  font-size: 18px;
+}
+.new-title h1{
+  color: black;
+  font-weight: 600;
+}
+.new-title li{
+  padding-top: 15px;
+}
+.new-title li:nth-child(2){
+  padding-top: 4px;
+}
+.new-title p{
+  text-align: left;
+  padding-top: 40px;
+}
+.bg-new:first-child{
+  padding: 0;
+}
+.bg-new img{
+  height: 500px;
+  width: 100%;
+
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color:#00000000 ;
+  background-image: linear-gradient(180deg, #0A043C00 20%, #1D252B 100%);
+  padding:30px;
+  text-align: left;
+  margin-bottom: 16px;
+}
+.col-4{
+  position: relative;
+}
+.overlay >div{
+  position: absolute;
+  z-index: 20;
+}
+.overlay >div:last-child{
+  bottom: 10%;
+}
+.overlay >div >a{
+  color: black;
+  background-color: #19CBE4;
+  padding:10px ;
+}
+.overlay >div >h1 >a:focus{
+  color: white;
+}
+.overlay >div >h1{
+  font-size: 25px;
+  color: white;
+  font-weight: 600;
+}
+.overlay >div >p{
+  color: white;
+}
+.overlay-2{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color:#00000000 ;
+  background-image: linear-gradient(180deg, #0A043C00 20%, #1D252B 100%);
+  padding:30px;
+  text-align: left;
+  margin:16px  12px;
+}
+.overlay-2 >div{
+  position: absolute;
+  z-index: 20;
+}
+.overlay-2 >div:last-child{
+  bottom: 10%;
+}
+.design{
+  top: 15px;
+}
+.overlay-2 >div >a{
+  color: black;
+  background-color: #19CBE4;
+  padding:10px ;
+  top: 15px;
+}
+.overlay-2 >div >h1 >a:focus{
+  color: white;
+}
+.overlay-2 >div >h1{
+  font-size: 25px;
+  color: white;
+  font-weight: 600;
+}
+.overlay-2 >div >p{
+  color: white;
+}
+.table-new{
+  text-align: left;
+  padding: 40px 50px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 10%);
+  transition: background 0.3s, border 0.3s, border-radius 0.3s,box-shadow 0.3s;
+}
+
+.table-new h5{
+  color: black;
+  font-weight: 600;
+  font-size: 30px;
+}
+.recent-news{
+  padding: 0;
+}
+.recent-news li{
+  padding-top: 20px;
+}
+.recent-news ul{
+  padding: 0;
+}
+.news a{
+  font-size: 14px;
+  color: black;
+  font-weight: 600;
+}
+.news >a:hover{
+  color: #19CBE4;
+}
+.news i{
+  font-size: 14px;
+  padding-right:5px ;
+  font-weight: 300;
+}
+/*banner*/
+.home-e7{
+  padding-bottom: 100px;
+}
+.home-e7 > div{
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 843px;
+  transition: 0.3s ease;
+}
+.home-e7 .row{
+  --bs-gutter-x:0px;
+  height: 100%;
+}
+.home-e7 .col-3{
+  border-right: 1px solid rgba(255,255,255,.3) ;
+  padding: 0px;
+  height: 100%;
+  position: relative;
+}
+.home-e7 .col-3 h3{
+  color: white;
+  padding: 62px ;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top:0px;
+  font-weight: 600;
+}
+.home-e7 .col-3 .bg-w{
+  background-color: #fff;
+  height: 0px;
+  position: relative;
+  transition: height 0.5s;
+}
+.home-e7 .col-3:hover .bg-w{
+  height: 164px;
+}
+.home-e7 .col-3:hover h3{
+  color: #1D252B;
+}
+
+/*endbanner*/

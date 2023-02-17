@@ -1,0 +1,94 @@
+/*slider*/
+.slider{
+  background-image: url(../../assets/images/FAQ.jpg);
+  background-position: 0px 65%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 0px;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding:250px 200px;
+  position: relative;
+  color: white;
+  font-weight: 600;
+}
+.over-lay{
+  background-color: #082441;
+  opacity: 0.5;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.line{
+  width: 50px;
+  height: 2px;
+  background-color: #19CBE4;
+}
+.title{
+  text-align: left;
+  padding: 0;
+  margin-left: -75px;
+}
+.title h1{
+  font-weight: 600;
+}
+.nav li{
+  padding-right:5px ;
+  font-weight: 400;
+}
+.nav i{
+  color: #19CBE4;
+}
+.content{
+  text-align: center;
+  padding: 0;
+}
+.content li{
+  padding-top: 10px;
+}
+.content .line{
+  position: relative;
+  left: 47%;
+}
+.content li:first-child{
+  font-weight: 600;
+  color: black;
+  font-size: 15px;
+}
+.content h1{
+  font-weight: 600;
+  color: black;
+}
+.content p:last-child{
+
+}
+.question{
+  text-align: left;
+}
+button{
+  border: none;
+  color: black;
+  background-color: white;
+  font-size: 20px;
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+}
+button:hover{
+  background-color: white;
+  color: black;
+  outline: white;
+}
+button:focus{
+  color: #1c9bd8;
+}
+.dropdown-toggle::after{
+  display: none;
+}
+
