@@ -28,28 +28,36 @@
         <div class="col-9 hright categories">
           <ul class="nav">
             <li><a routerLink="/">Home</a></li>
-            <li><a href="#"> About</a></li>
+            <li><a  routerLink="/about" > About</a></li>
             <li><a routerLink="/services">Servies</a></li>
             <li ngbDropdown class="nav-column" >
-              <a href="#"> Pages</a>
+              <a href="#"> Gallery</a>
+              <i  class="bi bi-chevron-down py-5"></i>
+              <ul  ngbDropdownMenu class="nav-item">
+                <li ngbDropdownItem><a routerLink="/animal" >All Animal</a></li>
+                <li ngbDropdownItem><a routerLink="/animal-singe/1">African Penguin</a></li>
+                <li ngbDropdownItem><a routerLink="/animal-singe/2">Beluga Whale</a></li>
+                <li ngbDropdownItem><a routerLink="/animal-singe/3">California Sea Lion</a></li>
+                <li ngbDropdownItem><a routerLink="/animal-singe/5">Tiger Shark</a></li>
+              </ul>
+            </li>
+            <li ngbDropdown class="nav-column" >
+              <a routerLink="/event" > Events</a>
               <i  class="bi bi-chevron-down py-5"></i>
                 <ul  ngbDropdownMenu class="nav-item">
-                  <li ngbDropdownItem><a href="#">Pricing</a></li>
-                  <li ngbDropdownItem><a href="#">Gallery</a></li>
-                  <li ngbDropdownItem><a href="#">Events</a></li>
+                  <li ngbDropdownItem><a routerLink="/gallery" >Gallery</a></li>
                   <li ngbDropdownItem><a routerLink="/FAQ">FAQ</a></li>
-                  <li ngbDropdownItem><a routerLink="/404">404 Page</a></li>
                 </ul>
             </li>
             <li ngbDropdown class="nav-column">
               <a  href="#">Blog</a>
               <i class="bi bi-chevron-down"></i>
               <ul  ngbDropdownMenu class="nav-item">
-                <li ngbDropdownItem><a href="#">Blog</a></li>
-                <li ngbDropdownItem><a href="#">Single Post</a></li>
+                <li ngbDropdownItem><a routerLink="/blog">Blog</a></li>
+                <li ngbDropdownItem><a routerLink="/singlepost">Single Post</a></li>
               </ul>
             </li>
-            <li><a href="#">Contact</a></li>
+            <li><a routerLink="/Contact" >Contact</a></li>
             <li><i class="bi bi-telephone" style="color: #19cbe4"></i>+021 441 9858</li>
           </ul>
         </div>
@@ -114,7 +122,7 @@
 </section>
 <footer class="section footer ">
 <div class="container ">
-    <div class="row py-3">
+    <div class="row py-5">
       <div class="col-3">
         <div class="row info">
           <div class="col-3 f-icon">
@@ -143,19 +151,19 @@
             <i class="bi bi-envelope-fill"></i>
           </div>
           <div class="col-9 location ">
-            <h5> Location</h5>
-            <span>Legian Atkins West,  DPS 11490,  Bali</span>
+            <h5>Email</h5>
+            <span>aquavist@support.com</span>
           </div>
         </div>
       </div>
       <div class="col-3">
         <div class="row info">
           <div class="col-3 f-icon">
-            <i class="bi bi-geo-alt-fill"></i>
+            <i class="bi bi-clock-fill"></i>
           </div>
           <div class="col-9 location ">
-            <h5> Location</h5>
-            <span>Legian Atkins West,  DPS 11490,  Bali</span>
+            <h5>Opening Hours</h5>
+            <span>Everyday 09:00 AM - 18:00 PM</span>
           </div>
         </div>
       </div>
@@ -168,27 +176,26 @@
             <img src="../assets/images/logo3-Q2SAW4M-e1628655153433.png" alt="">
           </div>
           <div class="py-3">
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor
-              aenean massa.</p>
+            <p>"We had an incredibly good time here. Excellent exhibits that are engaging and educational.”</p>
           </div>
           <div>
             <ul class=" nav i-media">
-              <li><i class="bi bi-geo-alt-fill"></i></li>
-              <li><i class="bi bi-geo-alt-fill"></i></li>
-              <li><i class="bi bi-geo-alt-fill"></i></li>
-              <li><i class="bi bi-geo-alt-fill"></i></li>
+              <li><i class="bi bi-facebook"></i></li>
+              <li><i class="bi bi-twitter"></i></li>
+              <li><i class="bi bi-youtube"></i></li>
+              <li><i class="bi bi-instagram"></i></li>
             </ul>
           </div>
         </div>
         <div class="col-3">
-          <div class="li-link">
+          <div class="li-link ">
             <h5>Imortant Links</h5>
             <ul >
               <li><a href="#">Support</a></li>
-              <li><a href="#">Support</a></li>
-              <li><a href="#">Support</a></li>
-              <li><a href="#">Support</a></li>
-              <li><a href="#">Support</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Term & Condition</a></li>
+              <li><a href="#">Disclaimer</a></li>
             </ul>
           </div>
         </div>
@@ -196,30 +203,41 @@
           <div class="li-link">
             <h5>Get To Know</h5>
             <ul >
-              <li><a href="#">Support</a></li>
-              <li><a href="#">Support</a></li>
-              <li><a href="#">Support</a></li>
-              <li><a href="#">Support</a></li>
-              <li><a href="#">Support</a></li>
+              <li><a href="#">Maintenance</a></li>
+              <li><a href="#">Cleaning Services</a></li>
+              <li><a href="#">Aquarium Design</a></li>
+              <li><a href="#">Aquarium Supplies</a></li>
+              <li><a href="#">Health Services</a></li>
             </ul>
           </div>
         </div>
         <div class="col-3 subscribe  ">
           <div >
             <h5>Subscribe Our Newsletter</h5>
-            <p>Lorem ipsum dolor sit amet consectetuer adipis arcing elit.
-              Aenean commodo ligula eget commodo ligula eget..</p>
+            <p>Happy employees, happy customers. At least, that's what they say.</p>
           </div>
-<!--          <from action="sumbit">-->
+          <from #userForm="ngForm" [formGroup]="infoUser" (ngSubmit)="onSubmit(userForm.value)" >
+            <div *ngIf="f.email.invalid&&(f.email.dirty||f.email.touched)">
+              <div *ngIf="f.email.errors" class="errors">
+                <div *ngIf="f.email.errors?.['required']">
+                  <p>Email cannot be empty</p>
+                </div>
+                <div *ngIf="f.email.errors?.['email']">
+                  <p>Email format is incorrect</p>
+                </div>
+              </div>
+            </div>
           <div class="row mess py-3">
             <div class="col-9">
-              <input type="email" required placeholder="Your email">
+              <input type="email" placeholder="Your email" id="email" formControlName="email">
             </div>
             <div class="col-3 i-mess">
-              <i class="bi bi-geo-alt-fill"></i>
+              <button type="submit"  [disabled]="!infoUser.valid">
+                  <i class="bi bi-telegram"></i>
+              </button>
             </div>
           </div>
-<!--          </from>-->
+          </from>
         </div>
       </div>
     </div>
