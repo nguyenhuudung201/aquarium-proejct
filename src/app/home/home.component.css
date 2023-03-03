@@ -83,6 +83,7 @@
   text-align: left;
   width: 33.333%;
   margin-top: 50px;
+  backdrop-filter: blur(10px);
 }
 
 .content li{
@@ -108,7 +109,8 @@
   margin-top: 0;
 }
 .content-img img{
-
+  min-height: 100%;
+  padding-left: 2px;
 }
 .about-img{
   padding: 0;
@@ -117,13 +119,47 @@
 }
 .i-play{
   position: absolute;
-  right: 37%;
-  color: #19CBE4;
-  font-size: 60px;
-  top: 87%;
+  color: #1d252b;
+  background-color: #19CBE4;
+  height: 60px;
+  bottom: 20px;
+  right: 38%;
+  width: 60px;
+  border-radius: 50%;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   z-index: 30;
   cursor: pointer;
+}
+.i-play:hover{
+  background-color: #1CAFC4;
+}
+.i-play::before,
+.i-play::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  z-index: -5;
+  opacity: 0.3;
+  border-radius: 50%;
+}
 
+.i-play::before{
+  animation: pulse 3s ease-out infinite;
+}
+.i-play::after{
+  animation: pulse 3s 1s ease-out infinite;
+}
+@keyframes pulse {
+  100%{
+    transform: scale(2);
+    opacity: 0;
+  }
 }
 .play-content{
   position: absolute;
@@ -131,6 +167,7 @@
   top: 86%;
   padding: 20px 50px 6px 60px;
   background-color: #1D252B;
+  z-index: 20;
 }
 .play-content h1{
   font-weight: 600;
@@ -222,6 +259,9 @@
 .slider-categories ul{
   padding: 0;
 }
+.slider-categories ul li:nth-child(1){
+  height: 88px;
+}
 .slider-categories li{
   padding-top: 20px;
 }
@@ -255,7 +295,7 @@
 
 }
 .bg-img-1{
-  height:750px;
+  height:650px;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -297,7 +337,9 @@
   border: none;
   color: #19CBE4;
   font-weight: 600;
-
+  position: relative;
+  top: 0;
+  transition: top 0.3s;
 }
 .content-services>ul>li>a:hover{
   position: relative;
@@ -486,7 +528,7 @@
   padding-top: 15px;
 }
 .comment-1 p{
-  font-size: 20px;
+  font-size: 10px;
   font-style: oblique;
 }
 .comment-1 h5{
@@ -739,5 +781,121 @@
 .home-e7 .col-3:hover h3{
   color: #1D252B;
 }
-
+.comment{
+  text-align: left;
+  padding:10px 0px;
+}
+.comment-full p{
+  font-size: 16px;
+}
+.comment li:last-child {
+  padding-top: 15px;
+}
+.comment p{
+  font-size: 16px;
+  font-style: oblique;
+}
+.comment h5{
+  font-weight: 600;
+  color: black;
+}
+.comment-img {
+  padding: 0;
+}
+.comment-2{
+  text-align: left;
+  padding:10px 0px;
+}
+.comment-2 li:first-child {
+  padding-top: 20px;
+}
+.comment-2 li:last-child{
+  padding-top: 15px;
+}
+.comment-2 p{
+  font-size: 16px;
+  font-style: oblique;
+}
+.comment-2 h5{
+  font-weight: 600;
+  color: black;
+}
+.comment-img-1{
+  padding: 0;
+}
+.comment-img-1 >img{
+  width: 285px;
+  height: 285px;
+}
+.comment-1{
+  text-align: left;
+  padding:10px 0px;
+}
+.comment-1 li:first-child {
+  padding-top: 20px;
+}
+.comment-1 li:last-child{
+  padding-top: 15px;
+}
+.comment-1 p{
+  font-size: 16px;
+  font-style: oblique;
+}
+.comment-1 h5{
+  font-weight: 600;
+  color: black;
+}
 /*endbanner*/
+svg{
+  width: 100px;
+  height: 100px;
+  transform: rotate(-90deg);
+  overflow: initial;
+}
+
+circle{
+  stroke-width:5px;
+  fill:none;
+}
+#above-top{
+  stroke: #19CBE4;
+  stroke-dasharray:440 ;
+  stroke-dashoffset: 440;
+  animation: spiner1 3s steps(332) forwards ;
+}
+.above-under{
+  stroke: #19CBE4;
+  stroke-dasharray:440 ;
+  stroke-dashoffset: 440;
+  animation: spiner 3s steps(60) forwards;
+}
+
+@keyframes spiner {
+  100%{
+    stroke-dashoffset: 60;
+  }
+
+}
+@keyframes spiner1 {
+  100%{
+    stroke-dashoffset:8;
+  }
+
+}
+
+.circle_box{
+  text-align: left ;
+}
+.circle_box div{
+  position: relative;
+}
+.circle_box span{
+  position: absolute;
+  left: 29%;
+  top: 35%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+}
+

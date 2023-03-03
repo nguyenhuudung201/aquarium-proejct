@@ -151,7 +151,7 @@
   --spacer-size:750px;
 }
 .bg-img-1{
-  --spacer-size:750px;
+  height:750px;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -230,7 +230,7 @@
   padding-top: 15px;
 }
 .comment p{
-  font-size: 20px;
+  font-size: 16px;
   font-style: oblique;
 }
 .comment h5{
@@ -251,7 +251,7 @@
   padding-top: 15px;
 }
 .comment-2 p{
-  font-size: 20px;
+  font-size: 16px;
   font-style: oblique;
 }
 .comment-2 h5{
@@ -276,7 +276,7 @@
   padding-top: 15px;
 }
 .comment-1 p{
-  font-size: 20px;
+  font-size: 16px;
   font-style: oblique;
 }
 .comment-1 h5{
@@ -340,4 +340,55 @@
 }
 .mg-top{
   margin-top: 100px;
+}
+circle{
+  stroke-width:5px;
+  fill:none;
+}
+#above-top{
+  stroke: #19CBE4;
+  stroke-dasharray:440 ;
+  stroke-dashoffset: 440;
+  animation: spiner1 3s steps(332) forwards ;
+}
+.above-under{
+  stroke: #19CBE4;
+  stroke-dasharray:440 ;
+  stroke-dashoffset: 440;
+  animation: spiner 3s steps(60) forwards;
+}
+
+@keyframes spiner {
+  100%{
+    stroke-dashoffset: 60;
+  }
+
+}
+@keyframes spiner1 {
+  100%{
+    stroke-dashoffset:8;
+  }
+
+}
+
+.circle_box{
+  text-align: left ;
+}
+.circle_box div{
+  position: relative;
+}
+.circle_box span{
+  position: absolute;
+  left: 29%;
+  top: 35%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+}
+svg{
+  width: 100px;
+  height: 100px;
+  transform: rotate(-90deg);
+  overflow: initial;
 }

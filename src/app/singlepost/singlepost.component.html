@@ -1,0 +1,175 @@
+<section class="section post" *ngFor="let s of singleposts">
+  <img [src]="s.img_bg" alt="">
+  <div class="over-lay"></div>
+  <div class=" container">
+    <div class=" single">
+      <h1>{{s.title}}</h1>
+      <div class="line"></div>
+      <a>
+        <ul class="nav">
+          <li><i class="bi bi-person"></i> {{s.author}}</li>
+          <li><i class="bi bi-clock"></i>August 7, 2021</li>
+        </ul>
+      </a>
+    </div>
+  </div>
+</section>
+<section class="section post-e2 "*ngFor="let s of singleposts">
+  <div class="container-e2">
+    <div class="images1">
+      <img [src]="s.img_content" alt="">
+    </div>
+    <div>
+      <h1>{{s.title}}</h1>
+      <p>{{s.description}}</p>
+    </div>
+    <div class=" row py-5">
+      <div class="col-6">
+        <img src="../../assets/images/orange-fishes-float-in-an-aquarium-the-concept-of-the-water-wor-e1628655624633.jpg"></div>
+      <div class="col-6">
+        <h6>We Offer Everything About Aquarium</h6>
+        <ul class="nav1">
+          <li>
+            <i class="bi bi-chevron-double-right"></i><span>Programs In Aquaculture</span></li>
+          <li> <i class="bi bi-chevron-double-right"></i><span>Orchid Dottyback</span></li>
+          <li> <i class="bi bi-chevron-double-right"></i><span>Assessor & Several Other</span></li>
+          <li><i class="bi bi-chevron-double-right"></i><span>Aquarium Information</span></li>
+          <li><i class="bi bi-chevron-double-right"></i><span>Aquarium Information</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row my-5">
+      <div class="col-4 author ">
+        <h3>Tags: <span>{{s.author}}</span> </h3>
+      </div>
+      <div class="col-8 author ">
+        <h3>Share This:<i class="bi bi-facebook"></i><i class="bi bi-instagram"></i><i class="bi bi-telephone"></i><i class="bi bi-telegram"></i></h3>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <form #myForm="ngForm" [formGroup]="infoUser" (ngSubmit)="onSubmit(myForm.value)" class="leave-a-message">
+      <h1>Leave A Comment</h1>
+      <div class="row form-message">
+        <div class="col-6">
+          <label for="control-name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="control-name" formControlName="name" placeholder="Your name">
+          <div *ngIf="f.name.invalid&&(f.name.dirty||f.name.touched)">
+            <div *ngIf="f.name.errors" class="errors">
+              <div *ngIf="f.name.errors?.['required']">
+                <p>Name cannot be empty</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <label for="control-email" class="form-label" >Email</label>
+          <input type="email" class="form-control" id="control-email" formControlName="email" placeholder="Your email">
+          <div *ngIf="f.email.invalid&&(f.email.dirty||f.email.touched)">
+            <div *ngIf="f.email.errors" class="errors">
+              <div *ngIf="f.email.errors?.['required']">
+                <p>Email cannot be empty</p>
+              </div>
+              <div *ngIf="f.email.errors?.['email']">
+                <p>Email format is incorrect</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row form-message">
+        <div class="col-6">
+          <label for="control-subject" class="form-label">Subject</label>
+          <input type="text" class="form-control" id="control-subject" formControlName="Subject" placeholder="Your Subject">
+          <div *ngIf="f.Subject.invalid&&(f.Subject.dirty||f.Subject.touched)">
+            <div *ngIf="f.Subject.errors" class="errors">
+              <div *ngIf="f.Subject.errors?.['required']">
+                <p>Subject cannot be empty</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <label for="control-phone" class="form-label">Phone</label>
+          <input type="email" class="form-control" id="control-phone" formControlName="phone" placeholder="Your phone">
+          <div *ngIf="f.phone.invalid&&(f.phone.dirty||f.phone.touched)">
+            <div *ngIf="f.phone.errors" class="errors">
+              <div *ngIf="f.phone.errors?.['required']">
+                <p>Phone cannot be empty</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="textarea my-5">
+        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" formControlName="message" placeholder="Your comment "></textarea>
+        <div *ngIf="f.message.invalid&&(f.message.dirty||f.message.touched)">
+          <div *ngIf="f.message.errors" class="errors">
+            <div *ngIf="f.message.errors?.['required']">
+              <p>Comment cannot be empty</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-grid gap-2 pt-4">
+        <button type="submit" class="btn btn-primary" [disabled]="!infoUser.valid" >Post comment</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="section my-5">
+  <div class="container">
+    <div class="title">
+        <p>Related Blog</p>
+      <div class="line"></div>
+      <h1>Related Blog & Article</h1>
+    </div>
+  </div>
+</section>
+<section class="section mt-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <div class="img-new">
+          <div class="overlay"></div>
+          <div class="blog">
+            <div>Saltwater</div>
+            <div>
+              <a routerLink="/blog-single/1" >Different Aquariums For Different Ideas</a>
+              <p>Meet some adorable new arrivals and learn about the Aquarium’s breeding programs that promote ocean conservation....</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="img-new-2">
+          <div class="overlay"></div>
+          <div class="blog">
+            <div>Saltwater</div>
+            <div>
+              <a routerLink="/blog-single/2">Freshwater Aquarium Setups & Care</a>
+              <p>Support the programs and animals you know and love with a monthly donation of any size...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="img-new-3">
+          <div class="overlay"></div>
+          <div class="blog">
+            <div>Fishes</div>
+            <div>
+              <a routerLink="/blog-single/3" >Lifespan Of Freshwater Aquarium Fishes</a>
+              <p>If you plan on breeding fish and want to increase the survival rate of the babies, ...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
