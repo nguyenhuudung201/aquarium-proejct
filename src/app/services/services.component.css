@@ -38,7 +38,9 @@
 }
 /*endslider*/
 /*categories*/
-
+.el-1 p{
+  height: 100px;
+}
 .el-1 > ul{
   text-align: left;
   background-color: #19CBE4;
@@ -65,6 +67,9 @@
   color: black;
   font-size: 15px;
   font-weight: 600;
+}
+.el-2 p{
+  height: 100px;
 }
 .el-2 >ul{
   text-align: left;

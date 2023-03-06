@@ -27,7 +27,7 @@
   text-align: left;
   padding: 0;
   margin-left: -90px;
-  margin-top: -150px;
+  margin-top: -210px;
 }
 .title ul{
   padding: 0;
@@ -347,7 +347,9 @@
 }
 /*endslider*/
 /*categories*/
-
+.el-1 p{
+  height: 100px;
+}
 .el-1 > ul{
   text-align: left;
   background-color: #19CBE4;
@@ -378,6 +380,9 @@
 .el-2 >ul{
   text-align: left;
   padding: 35px 30px;
+}
+.el-2 p{
+  height: 100px;
 }
 .el-2 > ul:hover{
   background-color: #19CBE4;
@@ -625,7 +630,8 @@
 .bg-new img{
   height: 500px;
   width: 100%;
-
+  object-position: center;
+  object-fit: cover;
 }
 .overlay{
   position: absolute;
@@ -741,7 +747,7 @@
 }
 /*banner*/
 .home-e7{
-  padding-bottom: 100px;
+  padding-top: 100px;
 }
 .home-e7 > div{
   background-position: center center;

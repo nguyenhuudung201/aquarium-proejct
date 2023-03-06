@@ -87,6 +87,8 @@
   width: 100%;
   left: 0;
   top: 0;
+  object-position: center;
+  object-fit: cover;
 }
 .content span{
   padding: 6px 10px;

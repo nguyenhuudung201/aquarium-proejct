@@ -93,15 +93,17 @@
 }
 
 .over-lay{
-  background-image: linear-gradient(180deg, #02010124 0%, #01060C 95%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #00000000;
+  background-image: linear-gradient(180deg, #0A043C00 20%, #1D252B 100%);
+  padding: 30px;
+  text-align: left;
   height: 100%;
   width: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
-  background-color: #082441;
-  opacity: 0.7;
-  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
 }
 .date{
   right: 0;

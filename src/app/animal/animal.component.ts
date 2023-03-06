@@ -8,7 +8,8 @@ import {AnimalService} from "../animal.service";
   providers:[AnimalService]
 })
 export class AnimalComponent implements OnInit{
-    animals: any;
+    searchAnimal:any;
+    animals: any=[];
     constructor( private animal:AnimalService) {}
     ngOnInit() {
       this.animal.getAnimal().subscribe(data =>{
@@ -16,7 +17,15 @@ export class AnimalComponent implements OnInit{
         console.log(this.animals);
       })
     }
-
+    getAnimal(){
+      this.animal.getAnimal()
+    }
+  // search(){
+  //   this.animal.searchAnimal(this.s)
+  //     .subscribe(data=>{
+  //       this.animals =  data.animals;
+  //     })
+  // }
   // ngOnInit(){
   //     this.getAnimal();
   //     console.log(this.animals);

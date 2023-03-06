@@ -16,8 +16,12 @@ export class AppComponent {
   get f(){
     return this.infoUser.controls
   }
+  reload(){
+    window.location.reload();
+  }
   onSubmit(value:any):void{
     console.log(value);
     alert("Thank you! Form submitted successfully. ")
+    this.reload()
   }
 }

@@ -107,6 +107,8 @@ i{
 }
 .img1 >img{
   height: 100%;
+  object-position: center;
+  object-fit: cover;
 }
 
 .Testimonial h1{

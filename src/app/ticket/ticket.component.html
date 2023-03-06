@@ -17,28 +17,45 @@
           <h5>Get Ticket</h5>
           <div class="ngang"></div>
           <h1>My Order</h1>
-          <p>{{infoUser.value| json}}</p>
-        </div>
+          <div class="order"  *ngIf="ticket.price>0">
+            <h3>Tickets</h3>
+            <div>
+              <p>Start:{{ticket.timeBegin|date}}</p>
+              <p>End:{{ticket.timeEnd|date}}</p>
+              <img [src]="ticket.images" alt="">
+            </div>
 
+          </div>
+          <div class="order" *ngIf="ticket.price>0">
+            <h3>SUBTOTAL</h3>
+            <div>
+              <p>{{ticket.price|currency}}</p>
+            </div>
+
+          </div>
+        </div>
       </div>
       <div class="col-6">
         <form #myForm="ngForm" [formGroup]="infoUser" (ngSubmit)="onSubmit(myForm.value)" class="leave-a-message">
-          <h1>Leave A Message</h1>
+          <h1>Book Ticket</h1>
           <div class="row form-message">
             <div class="col-6">
               <label for="control-name" class="form-label">Name</label>
-              <input type="text" class="form-control" id="control-name" formControlName="name" placeholder="Your name">
+              <input type="text" class="form-control" name="name" id="control-name" formControlName="name" placeholder="Your name">
               <div *ngIf="f.name.invalid&&(f.name.dirty||f.name.touched)">
                 <div *ngIf="f.name.errors" class="errors">
                   <div *ngIf="f.name.errors?.['required']">
                     <p>Name cannot be empty</p>
                   </div>
+<!--                  <div *ngIf="f.name.errors?.['na']">-->
+<!--                    <p>Name format is incorrect</p>-->
+<!--                  </div>-->
                 </div>
               </div>
             </div>
             <div class="col-6">
               <label for="control-email" class="form-label" >Email</label>
-              <input type="email" class="form-control" id="control-email" formControlName="email" placeholder="Your email">
+              <input type="email" class="form-control" name="email" id="control-email" formControlName="email" placeholder="Your email">
               <div *ngIf="f.email.invalid&&(f.email.dirty||f.email.touched)">
                 <div *ngIf="f.email.errors" class="errors">
                   <div *ngIf="f.email.errors?.['required']">
@@ -62,11 +79,14 @@
             </div>
             <div class="col-6">
               <label for="control-phone" class="form-label">Phone</label>
-              <input type="email" class="form-control" id="control-phone" formControlName="phone" placeholder="Your phone">
+              <input type="email"  class="form-control" name="phone" id="control-phone" formControlName="phone" placeholder="Your phone">
               <div *ngIf="f.phone.invalid && (f.phone.dirty||f.phone.touched)">
                 <div *ngIf="f.phone.errors" class="errors">
                   <div *ngIf="f.phone.errors?.['required']">
                     <p>Phone cannot be empty</p>
+                  </div>
+                  <div *ngIf="f.phone.errors?.['pattern']">
+                    <p>Phone format is incorrect</p>
                   </div>
                 </div>
               </div>
@@ -75,16 +95,9 @@
           <div class="textarea">
             <label class="form-label">How many will be visiting?</label>
             <div class="num-amount">
-              <span class="material-symbols-outlined" (click)="minusNum()"><i class="bi bi-dash-square"></i></span>
-              <input type="number" formControlName="num" value="{{x.num}}">
-              <span class="material-symbols-outlined" (click)="plushNum()"><i class="bi bi-plus-square"></i></span>
-            </div>
-            <div *ngIf="f.num.invalid&&(f.num.dirty||f.num.touched)">
-              <div *ngIf="f.num.errors" class="errors">
-                <div *ngIf="f.num.errors?.['required']">
-                  <p> cannot be empty</p>
-                </div>
-              </div>
+<!--              <span class="material-symbols-outlined" ><i class="bi bi-dash-square"></i></span>-->
+              <input type="number" value="number" min="1" name="num" formControlName="num" >
+<!--              <span class="material-symbols-outlined" (click)="plushNum(infoUser.nu)"><i class="bi bi-plus-square"></i></span>-->
             </div>
           </div>
           <div class="d-grid gap-2 pt-4">

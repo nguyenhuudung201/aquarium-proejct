@@ -21,6 +21,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { TicketComponent } from './ticket/ticket.component';
 import {EventSingleComponent} from "./event-single/event-single.component";
 import { BlogSingleComponent } from './blog-single/blog-single.component';
+import {Ng2SearchPipeModule} from "ng2-search-filter";
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -66,7 +67,8 @@ const routes: Routes = [
     ClickOutsideModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    Ng2SearchPipeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

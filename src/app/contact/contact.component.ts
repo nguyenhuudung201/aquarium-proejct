@@ -31,11 +31,13 @@ export class ContactComponent {
   get m(){
     return this.infoUser.controls
   }
-  onSubmit(value:any):void{
-   console.log(value);
-   alert("Thank you! Form submitted successfully. ")
-  }
   reload(){
     window.location.reload();
   }
+  onSubmit(value:any):void{
+   console.log(value);
+   alert("Thank you! Form submitted successfully. ");
+   this.reload()
+  }
+
 }
