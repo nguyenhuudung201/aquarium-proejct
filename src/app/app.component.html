@@ -30,8 +30,9 @@
             <li><a routerLink="/">Home</a></li>
             <li><a  routerLink="/about" > About</a></li>
             <li><a routerLink="/services">Servies</a></li>
+            <li><a routerLink="/gallery">Gallery</a></li>
             <li ngbDropdown class="nav-column" >
-              <a href="#"> Gallery</a>
+              <a href="#"> Animal</a>
               <i  class="bi bi-chevron-down py-5"></i>
               <ul  ngbDropdownMenu class="nav-item">
                 <li ngbDropdownItem><a routerLink="/animal" >All Animal</a></li>
@@ -43,19 +44,9 @@
             </li>
             <li ngbDropdown class="nav-column" >
               <a routerLink="/event" > Events</a>
-              <i  class="bi bi-chevron-down py-5"></i>
-                <ul  ngbDropdownMenu class="nav-item">
-                  <li ngbDropdownItem><a routerLink="/gallery" >Gallery</a></li>
-                  <li ngbDropdownItem><a routerLink="/FAQ">FAQ</a></li>
-                </ul>
             </li>
             <li ngbDropdown class="nav-column">
-              <a  href="#">Blog</a>
-              <i class="bi bi-chevron-down"></i>
-              <ul  ngbDropdownMenu class="nav-item">
-                <li ngbDropdownItem><a routerLink="/blog">Blog</a></li>
-                <li ngbDropdownItem><a routerLink="/singlepost">Single Post</a></li>
-              </ul>
+              <a routerLink="/blog">Blog</a>
             </li>
             <li><a routerLink="/Contact" >Contact</a></li>
             <li><i class="bi bi-telephone" style="color: #19cbe4"></i>+021 441 9858</li>
@@ -191,11 +182,11 @@
           <div class="li-link ">
             <h5>Imortant Links</h5>
             <ul >
-              <li><a href="#">Support</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Term & Condition</a></li>
-              <li><a href="#">Disclaimer</a></li>
+              <li><a routerLink="/Contact">Support</a></li>
+              <li><a routerLink="/FAQ">FAQ</a></li>
+              <li><a routerLink="/FAQ">Privacy Policy</a></li>
+              <li><a routerLink="/FAQ">Term & Condition</a></li>
+              <li><a routerLink="/FAQ">Disclaimer</a></li>
             </ul>
           </div>
         </div>
@@ -203,11 +194,11 @@
           <div class="li-link">
             <h5>Get To Know</h5>
             <ul >
-              <li><a href="#">Maintenance</a></li>
-              <li><a href="#">Cleaning Services</a></li>
-              <li><a href="#">Aquarium Design</a></li>
-              <li><a href="#">Aquarium Supplies</a></li>
-              <li><a href="#">Health Services</a></li>
+              <li><a routerLink="/services">Maintenance</a></li>
+              <li><a routerLink="/services">Cleaning Services</a></li>
+              <li><a routerLink="/services">Aquarium Design</a></li>
+              <li><a routerLink="/services">Aquarium Supplies</a></li>
+              <li><a routerLink="/services">Health Services</a></li>
             </ul>
           </div>
         </div>
@@ -216,7 +207,17 @@
             <h5>Subscribe Our Newsletter</h5>
             <p>Happy employees, happy customers. At least, that's what they say.</p>
           </div>
-          <from #userForm="ngForm" [formGroup]="infoUser" (ngSubmit)="onSubmit(userForm.value)" >
+          <form #userForm="ngForm" [formGroup]="infoUser" (ngSubmit)="onSubmit(userForm.value)" >
+          <div class="row mess py-3">
+            <div class="col-9">
+              <input type="email"  id="control-email" formControlName="email" placeholder="Your email">
+            </div>
+            <div class="col-3 i-mess">
+              <button type="submit"  [disabled]="!infoUser.valid">
+                  <i class="bi bi-telegram"></i>
+              </button>
+            </div>
+          </div>
             <div *ngIf="f.email.invalid&&(f.email.dirty||f.email.touched)">
               <div *ngIf="f.email.errors" class="errors">
                 <div *ngIf="f.email.errors?.['required']">
@@ -227,17 +228,7 @@
                 </div>
               </div>
             </div>
-          <div class="row mess py-3">
-            <div class="col-9">
-              <input type="email" placeholder="Your email" id="email" formControlName="email">
-            </div>
-            <div class="col-3 i-mess">
-              <button type="submit"  [disabled]="!infoUser.valid">
-                  <i class="bi bi-telegram"></i>
-              </button>
-            </div>
-          </div>
-          </from>
+          </form>
         </div>
       </div>
     </div>

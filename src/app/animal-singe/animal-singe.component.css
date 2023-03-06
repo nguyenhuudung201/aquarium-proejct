@@ -1,9 +1,6 @@
 .section{
   position: relative;
 }
-.container{
-  position: relative;
-}
 .over-lay{
   background-image: linear-gradient(180deg, #02010124 0%, #01060C 95%);
   height: 100%;
@@ -69,13 +66,16 @@ img{
 .info i{
   color: #1d2bed;
   font-size: 40px;
+
 }
 .info h6{
   font-size: 20px;
   padding-top: 15px;
   color: black;
   font-weight: 600;
+
 }
 .info p{
   font-weight: 500;
+
 }

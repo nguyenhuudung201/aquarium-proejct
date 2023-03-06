@@ -845,3 +845,12 @@ button{
   text-align: left;
   padding: 18px 50px 10px 36px;
 }
+.all a{
+  color: black;
+}
+.all:hover a{
+  color: #19CBE4;
+}
+.all-1 a{
+  color: black;
+}

@@ -159,6 +159,8 @@
   width: 100%;
   left: 0;
   top: 0;
+
+
 }
 .head i{
   color: #19CBE4;
@@ -256,7 +258,11 @@
 .event-e7 ul li{
   text-align: center;
 }
+.event-e3{
+  margin-bottom: 150px;
+}
 .section-e7 .col-5{
+
   position: relative;
   background-image: url("../../assets/images/coral-reef-colony-in-red-sea-in-egypt-e1628655283610.jpg");
 }
@@ -267,6 +273,19 @@
   height: 100%;
   padding: 91.15px;
   text-align: left;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #00000000;
+  background-image: linear-gradient(180deg, #0A043C00 20%, #1D252B 100%);
+  padding: 30px;
+  text-align: left;
+  height: 100%;
+  width: 100%;
 }
 .over-lay-one{
   background-color: #082441;
@@ -417,7 +436,11 @@
 .card-e7:hover{
   background-color: #283d3e;
 }
-
+.card-e7{
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
 .Pricing-Plan{
   margin: 0px 30px 0px 0px;
   padding: 10px;
@@ -613,4 +636,33 @@
 .slider-categories h5{
   color: black;
   font-weight: 600;
+}
+.sold-out-one >a{
+  background: #19cbe4;
+  font-weight: 600;
+  border: none;
+  margin-top: 26px;
+  padding: 20px 45px;
+  color: black;
+}
+.sold-out-one >a:hover{
+  background: #1D252B;
+  color: #19CBE4;
+}
+.sold-out >a{
+  padding: 20px 45px;
+  background: #C4C4C4;
+  color: #747474;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+.all a{
+  color: black;
+}
+.all:hover a{
+  color: #19CBE4;
+}
+.all-1 a{
+  color: black;
 }

@@ -166,3 +166,15 @@ i{
 .num-amount i{
   padding: 0px;
 }
+.order div{
+  margin-bottom: 50px;
+}
+.order p:nth-child(2){
+  margin: 15px 0;
+}
+.order h3{
+  font-weight: 600;
+  color: black;
+  margin-bottom: 15px;
+}
+

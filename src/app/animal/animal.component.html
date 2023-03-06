@@ -9,11 +9,14 @@
 </section>
 <section class="section py-5">
   <div class="container">
+    <div class="my-5">
+      <input name="searchAnimal" [(ngModel)]="searchAnimal" class="form-control" value="" required placeholder="Search...">
+    </div>
     <div class="row">
-      <div *ngFor=" let a of animals" class="col-4 mb-3 ">
+      <div *ngFor=" let a of animals |filter:searchAnimal" class="col-4 mb-3 ">
         <div class="img7">
           <img [src]="a.image"  alt="">
-  <!--          <div class="over-lay"></div>-->
+            <div class="over-lay"></div>
 <!--          <div class="date">-->
 <!--            <p>{{a.location}}</p>-->
 <!--          </div>-->
@@ -134,7 +137,7 @@
         <h4>17 August 2021</h4>
         <p>Independence Event</p>
         <div class="book-now">
-          <button type="submit">Book Now</button>
+          <button type="submit"><a routerLink="/ticket">Book now</a></button>
         </div>
       </div>
     </div>
