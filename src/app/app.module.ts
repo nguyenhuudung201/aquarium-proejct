@@ -24,21 +24,20 @@ import { BlogSingleComponent } from './blog-single/blog-single.component';
 import {Ng2SearchPipeModule} from "ng2-search-filter";
 
 const routes: Routes = [
-  {path:'',component:HomeComponent},
-  {path:'services',component:ServicesComponent},
-  {path:'FAQ',component:FAQComponent},
-  {path:'Contact',component:ContactComponent},
-  {path:'about',component:AboutComponent},
-  {path:'gallery',component:GalleryComponent},
-  {path:'blog',component:BlogComponent},
-  {path:'singlepost',component:SinglepostComponent},
-  {path:'event',component:EventComponent},
-  {path:'animal',component:AnimalComponent},
-  {path:'animal-singe/:id',component:AnimalSingeComponent},
-  {path:'event-single/:id',component:EventSingleComponent},
-  {path:'blog-single/:id',component:BlogSingleComponent},
-  {path:'ticket',component:TicketComponent},
-  {path:'**',component:PagesComponent},
+  {path:'',component:HomeComponent,title:'Home'},
+  {path:'services',component:ServicesComponent,title:'Services'},
+  {path:'FAQ',component:FAQComponent,title:'FAQ'},
+  {path:'Contact',component:ContactComponent,title:'Contact'},
+  {path:'about',component:AboutComponent,title:'About'},
+  {path:'gallery',component:GalleryComponent,title:'Gallery'},
+  {path:'blog',component:BlogComponent,title:'Blog'},
+  {path:'event',component:EventComponent,title:'Events'},
+  {path:'animal',component:AnimalComponent,title:'Animal'},
+  {path:'animal-singe/:id',component:AnimalSingeComponent,title:'Animal'},
+  {path:'event-single/:id',component:EventSingleComponent,title:'Event'},
+  {path:'blog-single/:id',component:BlogSingleComponent,title:'Blog'},
+  {path:'ticket',component:TicketComponent,title:'Ticket'},
+  {path:'**',component:PagesComponent,title:'Errors'},
 
 ];
 @NgModule({

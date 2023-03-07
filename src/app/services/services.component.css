@@ -140,7 +140,7 @@
   text-align: left;
 }
 .services-full{
-  padding: 0 60px;
+  padding: 60px;
   height: auto;
 }
 .services-full ul{
@@ -181,6 +181,10 @@
   text-align: left;
 }
 
+.content-services p{
+  width: 200px;
+  height: 100px;
+}
 .content-services i{
   color: #19CBE4;
   text-align: center;
@@ -384,7 +388,7 @@ circle{
 }
 .circle_box span{
   position: absolute;
-  left: 29%;
+  left: 21%;
   top: 35%;
   transform: translate(-50%,-50%);
   color: #fff;
@@ -396,4 +400,19 @@ svg{
   height: 100px;
   transform: rotate(-90deg);
   overflow: initial;
+}
+.gallery-e8 img{
+  object-position: center;
+  object-fit: cover;
+  height: 100%;
+}
+.gallery-e8 ul{
+  padding: 20px;
+}
+
+.gallery-e8 p{
+  font-size: 18px;
+}
+.col-3{
+  padding: 0;
 }

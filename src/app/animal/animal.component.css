@@ -91,7 +91,9 @@
   background-position: center center;
   background-image: url("../../assets/images/axolotl-070026.jpg");
 }
-
+.card-e7{
+  align-items: center;
+}
 .over-lay{
   position: absolute;
   top: 0;
@@ -311,6 +313,9 @@
   background: #19cbe4;
   border:none;
 }
+.book-now a{
+  color: black;
+}
 .book-now >button:hover{
   background: #1d252b;
   color: #19cbe4;
@@ -354,6 +359,7 @@
 }
 .card-e6{
   margin-top: 25px;
+  align-items: center;
 }
 .Pacific-Ocean{
   padding: 0px 0px 0px 50px ;

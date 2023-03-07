@@ -19,7 +19,7 @@
   height: 2px;
   width: 48px;
   margin-top: 22px;
-  margin-left: 68px;
+  margin-left: 33px;
 }
 .bi-chevron-double-right{
   color: #19CBE4;
@@ -38,8 +38,9 @@
   font-size: 55px;
 }
 .conten{
-  padding-top: 88px;
-  padding-left: 77px;
+  position: absolute;
+  left: 10%;
+  top: 40%;
 
 }
 .Home{
@@ -63,7 +64,7 @@
   background: #19cbe4;
   height: 1px;
   width: 48px;
-  margin-top: 22px
+  margin-top: 22px;
 }
 .We-Are{
   margin-top: 22px;

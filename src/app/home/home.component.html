@@ -1,4 +1,5 @@
-<section class="slider">
+<link rel="stylesheet" href="home.component.css">
+<section class="slider section">
   <div class="over-lay"></div>
   <div class="container title">
     <ul>
@@ -22,31 +23,31 @@
 </section>
 <section class="section">
   <div class="container-fluid">
-      <div class="row ">
-        <div class="col-5"></div>
-        <div class="col-7">
-          <div class="row slider-under ">
-            <div class="col-4 content">
-              <ul>
-                <li><h5>Modern<br> Design</h5></li>
-                <li><p>Designed by leading aquarium experts</p></li>
-                <li><a routerLink="/blog" >Learn More</a></li>
-              </ul>
-            </div>
-            <div class="col-4 content">
-              <ul>
-                <li><h5>About<br> Animal</h5></li>
-                <li><p>Collected all <br> over the world</p></li>
-                <li><a routerLink="/animal">Learn More</a></li>
-              </ul>
-            </div>
-            <div class="col-4 content-img">
-              <img src="../../assets/images/jellyfish-under-water-minimal-art-e1628654637349.jpg" alt="#">
-            </div>
+    <div class="row ">
+      <div class="col-5"></div>
+      <div class="col-7">
+        <div class="row slider-under ">
+          <div class="col-4 content">
+            <ul>
+              <li><h5>Modern<br> Design</h5></li>
+              <li><p>Designed by leading aquarium experts</p></li>
+              <li><a routerLink="/blog" >Learn More</a></li>
+            </ul>
+          </div>
+          <div class="col-4 content">
+            <ul>
+              <li><h5>About<br> Animal</h5></li>
+              <li><p>Collected all <br> over the world</p></li>
+              <li><a routerLink="/animal">Learn More</a></li>
+            </ul>
+          </div>
+          <div class="col-4 content-img">
+            <img src="../../assets/images/jellyfish-under-water-minimal-art-e1628654637349.jpg" alt="#">
           </div>
         </div>
       </div>
     </div>
+  </div>
 </section>
 <section class="section my-5 ">
   <div class="container">
@@ -54,7 +55,7 @@
       <div class="col-6 about-img">
         <img src="../../assets/images/aquarium-e1628654647969.jpg" alt="#">
         <div class="i-play">
-            <i class="bi bi-play-fill"></i>
+          <i class="bi bi-play-fill"></i>
         </div>
         <div class=" play-content">
           <ul class="nav">
@@ -97,7 +98,7 @@
               <li><i class="bi bi-bookmark-check"></i></li>
               <li><h5>Licensed Livestock</h5></li>
               <li><p>licensed to raise and trade aquarium services from the government</p></li>
-              <li><a href="#">Read More</a></li>
+              <li><a routerLink="/services">Read More</a></li>
             </ul>
           </div>
         </div>
@@ -231,7 +232,7 @@
               </div>
               <li><h1>Customer care</h1></li>
               <li><p>Happy employees, happy customers. At least, that's what they say.
-                </p></li>
+              </p></li>
               <li><a href="#">Read More</a></li>
             </ul>
           </div>
@@ -274,7 +275,7 @@
             <li><div class="line"></div></li>
             <li><h1>We Provide Special <br> Sevices</h1></li>
             <li>
-              <button type="sumbit">All Services</button>
+              <button type="sumbit"><a routerLink="/services"></a>All Services</button>
             </li>
           </ul>
         </div>
@@ -355,118 +356,82 @@
     </div>
   </div>
 </section>
-<section class="section">
-  <div class="container comment-full">
+
+<section class="section gallery-e8">
+  <div class="container ">
     <div class="row">
-      <div class="col-6">
-        <div class="row">
-          <div class="col-6 comment-img">
-            <img src="../../assets/images/colorful-fish-background-minimal-art-e1628654909970.jpg" alt="#">
-          </div>
-          <div class="col-6">
-            <div class="comment">
-              <ul>
-                <li><p>“Our kids are really excited to visit Seattle Aquarium, to see firsthand the world of creatures under the ocean.
-                  A place not to be missed when the little ones visit Seattle.”</p></li>
-                <li><h5>Rita Eland</h5></li>
-              </ul>
-            </div>
-          </div>
+      <div class="col-3">
+        <img src="../../assets/images/colorful-fish-background-minimal-art-e1628654909970.jpg" alt="#">
+      </div>
+      <div class="col-3">
+        <div class="comment">
+          <ul>
+            <li><p>“Our kids are really excited to visit Seattle Aquarium, to see firsthand the world of creatures under the ocean.
+              A place not to be missed when the little ones visit Seattle.”</p></li>
+            <li><h5>Rita Eland</h5></li>
+          </ul>
         </div>
       </div>
-      <div class="col-6">
-        <div class="row">
-          <div class="col-6 comment-img">
-            <img src="../../assets/images/pomacanthus-navarchus-blue-angel-sea-fish-in-aquarium-e1628654803499.jpg" alt="#">
-          </div>
-          <div class="col-6">
-            <div class="comment">
-              <ul>
-                <li><p>“Hubby likes fur seals and lionfish. I like the octopus and anemone.
-                  We got it right in almost no wait. It was a sunny Saturday. Staff very friendly. Good experience”</p></li>
-                <li><h5>Cheryl Butler</h5></li>
-              </ul>
-            </div>
-          </div>
+      <div class="col-3">
+        <img src="../../assets/images/pomacanthus-navarchus-blue-angel-sea-fish-in-aquarium-e1628654803499.jpg" alt="#">
+      </div>
+      <div class="col-3">
+        <div class="comment">
+          <ul>
+            <li><p>“Hubby likes fur seals and lionfish. I like the octopus and anemone.
+              We got it right in almost no wait. It was a sunny Saturday. Staff very friendly. Good experience”</p></li>
+            <li><h5>Cheryl Butler</h5></li>
+          </ul>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<section class="section ">
-  <div class="container  comment-full">
-    <div class="row">
-      <div class="col-6">
-        <div class="row">
-          <div class="col-6">
-            <div class="comment-2">
-              <ul>
-                <li><p>“Visit the Seattle Aquarium with our City Pass.
-                  Timed tickets are very easy to obtain (still required in December 2022) through
-                  the Aquarium with City Pass website. ”</p></li>
-                <li><h5>Kayla Wheatly</h5></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-6 comment-img">
-            <img src="../../assets/images/sea-turtle-in-a-marine-aquarium-in-sarasota-florida--e1628654924573.jpg" alt="">
-          </div>
+      <div class="col-3">
+        <div class="comment">
+          <ul>
+            <li><p>“Visit the Seattle Aquarium with our City Pass.
+              Timed tickets are very easy to obtain (still required in December 2022) through
+              the Aquarium with City Pass website. ”</p></li>
+            <li><h5>Kayla Wheatly</h5></li>
+          </ul>
         </div>
       </div>
-      <div class="col-6">
-        <div class="row">
-          <div class="col-6">
-            <div class="comment-2">
-              <ul>
-                <li><p>“This is a nice little aquarium, you can see it all in about an hour.
-                  The jellyfish arch is very cool, so is the octopus. My favorite is sea otters though,
-                  they are bigger than what we see in Alaska. ”</p></li>
-                <li><h5>Ted Ortega</h5></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-6 comment-img">
-            <img src="../../assets/images/tropical-fishes-meet-in-blue-coral-reef-sea-water-aquarium-unde-e1628654892726.jpg" alt="">
-          </div>
+      <div class="col-3">
+        <img src="../../assets/images/sea-turtle-in-a-marine-aquarium-in-sarasota-florida--e1628654924573.jpg" alt="">
+      </div>
+      <div class="col-3">
+        <div class="comment">
+          <ul>
+            <li><p>“This is a nice little aquarium, you can see it all in about an hour.
+              The jellyfish arch is very cool, so is the octopus. My favorite is sea otters though,
+              they are bigger than what we see in Alaska. ”</p></li>
+            <li><h5>Ted Ortega</h5></li>
+          </ul>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<section class="section">
-  <div class="container comment-full">
-    <div class="row">
-      <div class="col-6">
-        <div class="row">
-          <div class="col-6 comment-img-1">
-            <img src="../../assets/images/underwater-world-fish-aquarium-e1628654944594.jpg" alt="#">
-          </div>
-          <div class="col-6">
-            <div class="comment-1">
-              <ul>
-                <li><p>“What a wonderful fish tank. I don't usually like any aquarium but
-                  as we passed through the city we called the kids to visit if they liked it.”</p></li>
-                <li><h5>Glen Bennett</h5></li>
-              </ul>
-            </div>
-          </div>
+      <div class="col-3">
+        <img src="../../assets/images/tropical-fishes-meet-in-blue-coral-reef-sea-water-aquarium-unde-e1628654892726.jpg" alt="">
+      </div>
+      <div class="col-3">
+        <img src="../../assets/images/underwater-world-fish-aquarium-e1628654944594.jpg" alt="#">
+      </div>
+      <div class="col-3">
+        <div class="comment">
+          <ul>
+            <li><p>“What a wonderful fish tank. I don't usually like any aquarium but
+              as we passed through the city we called the kids to visit if they liked it.”</p></li>
+            <li><h5>Glen Bennett</h5></li>
+          </ul>
         </div>
       </div>
-      <div class="col-6">
-        <div class="row">
-          <div class="col-6 comment-img-1">
-            <img src="../../assets/images/aquarium-coral-e1628654973785.jpg" alt="#">
-          </div>
-          <div class="col-6">
-            <div class="comment-1">
-              <ul>
-                <li><p>“Nice aquarium but a bit overrated. Entering the facility is easy and fast,
-                  especially with timed entry. The tank/display area at the entrance is perhaps the most impressive of all the displays on the facility.
-                  Then the display and tank were outdated and a bit poor.”</p></li>
-                <li><h5>Unity Norris</h5></li>
-              </ul>
-            </div>
-          </div>
+      <div class="col-3">
+        <img src="../../assets/images/aquarium-coral-e1628654973785.jpg" alt="#">
+      </div>
+      <div class="col-3">
+        <div class="comment">
+          <ul>
+            <li><p>“Nice aquarium but a bit overrated. Entering the facility is easy and fast,
+              especially with timed entry. The tank/display area at the entrance is perhaps .”</p></li>
+            <li><h5>Unity Norris</h5></li>
+          </ul>
         </div>
       </div>
     </div>
@@ -587,8 +552,6 @@
           </div>
         </div>
       </div>
-
-
     </div>
   </div>
 </section>
@@ -614,27 +577,34 @@
 <section class="section">
   <div class="container">
     <div class="row">
-      <div class="col-4 bg-new">
-        <img src="../../assets/images/colorful-fish-from-the-spieces-symphysodon-discus-in-aquarium--e1628655050154.jpg" alt="">
-          <div class="overlay" >
+      <div class="col-4 ">
+        <div class="bg-new">
+          <div class="overlay" ></div>
+          <img src="../../assets/images/colorful-fish-from-the-spieces-symphysodon-discus-in-aquarium--e1628655050154.jpg" alt="">
+          <div class="new-content">
             <div>
               <a href="#">Saltwater</a>
             </div>
-            <div>
+            <div class="detail">
               <h1><a routerLink="/blog-single/1" >Different Aquariums For Different Ideas</a></h1>
               <p>Meet some adorable new arrivals and learn about the Aquarium’s breeding programs that promote ocean conservation.</p>
             </div>
           </div>
+        </div>
+
       </div>
-      <div class="col-4 bg-new">
-        <img src="../../assets/images/carp-fish-in-the-aquarium-e1628655039273.jpg" alt="">
-        <div class="overlay-2">
-          <div class="design">
-            <a href="#">Design</a>
-          </div>
-          <div>
-            <h1><a routerLink="/blog-single/2">Freshwater Aquarium Setups & Care</a></h1>
-            <p>Support the programs and animals you know and love with a monthly donation of any size.</p>
+      <div class="col-4 ">
+        <div class="bg-new">
+          <div class="overlay"></div>
+          <img src="../../assets/images/carp-fish-in-the-aquarium-e1628655039273.jpg" alt="">
+          <div class="new-content">
+            <div class="design">
+              <a href="#">Design</a>
+            </div>
+            <div class="detail">
+              <h1><a routerLink="/blog-single/2">Freshwater Aquarium Setups & Care</a></h1>
+              <p>Support the programs and animals you know and love with a monthly donation of any size.</p>
+            </div>
           </div>
         </div>
       </div>

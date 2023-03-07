@@ -23,11 +23,11 @@
   left: 0;
   position: absolute;
 }
+
 .title{
   text-align: left;
   padding: 0;
-  margin-left: -90px;
-  margin-top: -210px;
+  bottom: 230px
 }
 .title ul{
   padding: 0;
@@ -45,6 +45,7 @@
 }
 .title p{
   font-weight: 400;
+  width: 800px;
 }
 .line{
   width: 35px;
@@ -82,13 +83,13 @@
   background-color: #82FFDB1C;
   text-align: left;
   width: 33.333%;
-  margin-top: 50px;
-  backdrop-filter: blur(10px);
+  margin-top: 72px;
+  backdrop-filter: blur(35px);
+  padding: 30px;
+  height: 100%;
 }
 
-.content li{
-  padding-top: 15px;
-}
+
 .content h5{
   color: white;
   font-weight: 600;
@@ -96,6 +97,7 @@
 }
 .content p{
   color: white;
+  margin: 15px 0;
 }
 .content a{
   color: #19CBE4;
@@ -123,7 +125,7 @@
   background-color: #19CBE4;
   height: 60px;
   bottom: 20px;
-  right: 38%;
+  right: 34%;
   width: 60px;
   border-radius: 50%;
   font-size: 30px;
@@ -164,7 +166,7 @@
 .play-content{
   position: absolute;
   right: 0;
-  top: 86%;
+  bottom: 0;
   padding: 20px 50px 6px 60px;
   background-color: #1D252B;
   z-index: 20;
@@ -279,7 +281,7 @@
   text-align: left;
 }
 .services-full{
-  padding: 0 60px;
+  padding: 60px;
   height: auto;
 }
 .services-full ul{
@@ -332,6 +334,10 @@
   font-size: 20px;
   font-weight: 600;
   color: white;
+}
+.content-services p{
+  width: 200px;
+  height: 100px;
 }
 .content-services>ul>li>a{
   border: none;
@@ -497,6 +503,9 @@
 .comment-img {
   padding: 0;
 }
+.col-3{
+  padding: 0;
+}
 .comment-2{
   text-align: left;
   padding:10px 0px;
@@ -515,31 +524,40 @@
   font-weight: 600;
   color: black;
 }
-.comment-img-1{
-  padding: 0;
-}
-.comment-img-1 >img{
-  width: 285px;
-  height: 285px;
-}
-.comment-1{
+.comment{
   text-align: left;
-  padding:10px 0px;
+  padding:10px ;
 }
-.comment-1 li:first-child {
-  padding-top: 20px;
-}
-.comment-1 li:last-child{
+.comment li:last-child {
   padding-top: 15px;
 }
-.comment-1 p{
-  font-size: 10px;
+.comment p{
+  font-size: 20px;
   font-style: oblique;
 }
-.comment-1 h5{
+.comment h5{
   font-weight: 600;
   color: black;
 }
+.comment-img {
+  padding: 0;
+}
+.gallery-e8 img{
+  object-position: center;
+  object-fit: cover;
+  height: 100%;
+}
+.gallery-e8 ul{
+  padding: 20px;
+}
+
+.gallery-e8 p{
+  font-size: 18px;
+}
+
+
+
+
 .bg-img{
   background-image: url("../../assets/images/family-watchig-fishes-at-a-aquarium-e1628654789954.jpg");
   width: 106%;
@@ -627,8 +645,13 @@
 .bg-new:first-child{
   padding: 0;
 }
+.bg-new {
+  height:100%;
+  width: 100%;
+  position: relative;
+}
 .bg-new img{
-  height: 500px;
+  height: 100%;
   width: 100%;
   object-position: center;
   object-fit: cover;
@@ -639,77 +662,51 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-color:#00000000 ;
+  background-color: #00000000;
   background-image: linear-gradient(180deg, #0A043C00 20%, #1D252B 100%);
-  padding:30px;
-  text-align: left;
-  margin-bottom: 16px;
+  height: 100%;
+  width: 100%;
 }
-.col-4{
-  position: relative;
-}
-.overlay >div{
+
+.new-content{
   position: absolute;
-  z-index: 20;
-}
-.overlay >div:last-child{
-  bottom: 10%;
-}
-.overlay >div >a{
-  color: black;
-  background-color: #19CBE4;
-  padding:10px ;
-}
-.overlay >div >h1 >a:focus{
-  color: white;
-}
-.overlay >div >h1{
-  font-size: 25px;
-  color: white;
-  font-weight: 600;
-}
-.overlay >div >p{
-  color: white;
-}
-.overlay-2{
-  position: absolute;
+  z-index: 55;
   top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color:#00000000 ;
-  background-image: linear-gradient(180deg, #0A043C00 20%, #1D252B 100%);
-  padding:30px;
   text-align: left;
-  margin:16px  12px;
+  padding: 30px;
+  height: 100%;
+  width: 100%;
 }
-.overlay-2 >div{
+
+.new-content >div:last-child{
+  bottom: 0;
   position: absolute;
-  z-index: 20;
-}
-.overlay-2 >div:last-child{
-  bottom: 10%;
+  padding: 30px;
 }
 .design{
   top: 15px;
 }
-.overlay-2 >div >a{
+.new-content >div >a{
   color: black;
   background-color: #19CBE4;
   padding:10px ;
   top: 15px;
 }
-.overlay-2 >div >h1 >a:focus{
+.new-content>div >h1 >a:focus{
   color: white;
 }
-.overlay-2 >div >h1{
+.new-content>div >h1{
   font-size: 25px;
   color: white;
   font-weight: 600;
 }
-.overlay-2 >div >p{
+.new-content >div >p{
   color: white;
 }
+.new-content img{
+  width: 100%;
+}
+
 .table-new{
   text-align: left;
   padding: 40px 50px;
@@ -897,7 +894,7 @@ circle{
 }
 .circle_box span{
   position: absolute;
-  left: 29%;
+  left: 21%;
   top: 35%;
   transform: translate(-50%,-50%);
   color: #fff;

@@ -32,7 +32,6 @@
 .title{
   text-align: left;
   padding: 0;
-  margin-left: -75px;
 }
 .title h1{
   font-weight: 600;
@@ -124,8 +123,12 @@ button:focus{
   text-align: left;
 }
 .services-full{
-  padding: 0 60px;
+  padding: 60px;
   height: auto;
+}
+.services-full p{
+  height: 100px;
+  width: 200px;
 }
 .services-full ul{
   padding: 0;
@@ -140,7 +143,7 @@ button:focus{
   --spacer-size:750px;
 }
 .bg-img-1{
-  height:650px;
+  height:800px;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -193,20 +196,55 @@ button:focus{
   position: relative;
   top: 10px;
 }
-.col-4{
-  position: relative;
+.new-content{
+  position: absolute;
+  z-index: 55;
+  top: 0;
+  text-align: left;
+  padding: 30px;
+  height: 100%;
+  width: 100%;
 }
+
+.new-content >div:last-child{
+  bottom: 0;
+  position: absolute;
+  padding: 30px;
+}
+.design{
+  top: 15px;
+}
+.new-content >div >a{
+  color: black;
+  background-color: #19CBE4;
+  padding:10px ;
+  top: 15px;
+}
+.new-content>div >h1 >a:focus{
+  color: white;
+}
+.new-content>div >h1{
+  font-size: 25px;
+  color: white;
+  font-weight: 600;
+}
+.new-content >div >p{
+  color: white;
+}
+.new-content img{
+  width: 100%;
+}
+
 .overlay{
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background-color:#00000000 ;
+  background-color: #00000000;
   background-image: linear-gradient(180deg, #0A043C00 20%, #1D252B 100%);
-  padding:30px;
-  text-align: left;
-  margin-bottom: 16px;
+  height: 100%;
+  width: 100%;
 }
 .overlay >div{
   position: absolute;
@@ -334,9 +372,16 @@ button:focus{
 .bg-new:first-child{
   padding: 0;
 }
-.bg-new img{
-  height: 500px;
+.bg-new{
+  position: relative;
+  height: 100%;
   width: 100%;
+}
+.bg-new img{
+  height: 100%;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
 
 }
 .mg-top{
@@ -388,7 +433,7 @@ circle{
 }
 .circle_box span{
   position: absolute;
-  left: 29%;
+  left: 21%;
   top: 35%;
   transform: translate(-50%,-50%);
   color: #fff;

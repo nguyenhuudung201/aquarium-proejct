@@ -4,6 +4,9 @@
   position: relative;
   z-index: 999;
 }
+.header .container{
+  padding-top: 12px;
+}
 .my-2{
   border-top: 1px solid #FFFFFF2E;
 }
@@ -254,7 +257,9 @@ ul >li >span > i{
   color: white;
   background-color: #19CBE4;
 }
-
+.mess input{
+  padding-left: 30px;
+}
 /*endfooter*/
 .f-img >div{
   padding: 0;
