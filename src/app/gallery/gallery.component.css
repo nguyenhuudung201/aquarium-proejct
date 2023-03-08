@@ -37,7 +37,7 @@ i{
   padding-right: 12px;
 }
 .Nature-Aquarium{
-  padding: 75.95px 75.95px 16px 50px;
+  padding: 80px;
   text-align: left;
 }
 .Nature-Aquarium h6{
@@ -207,6 +207,9 @@ i{
 }
 .carousel-item-active .sao1{
   text-align: initial;
+}
+.home-e7{
+  padding-top: 100px;
 }
 .home-e7 > div{
   background-position: center center;

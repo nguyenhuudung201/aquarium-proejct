@@ -258,7 +258,10 @@ ul >li >span > i{
   background-color: #19CBE4;
 }
 .mess input{
-  padding-left: 30px;
+  width: 100%;
+}
+.mess .col-9{
+  padding-right: 0px;
 }
 /*endfooter*/
 .f-img >div{

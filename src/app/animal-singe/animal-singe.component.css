@@ -69,7 +69,7 @@ img{
 .info i{
   color: #1d2bed;
   font-size: 40px;
-
+  line-height: 1;
 }
 .info h6{
   font-size: 20px;
