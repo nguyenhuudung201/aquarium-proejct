@@ -1,9 +1,7 @@
 .section{
   position: relative;
 }
-.container{
-  position: relative;
-}
+
 .over-lay{
   background-image: linear-gradient(180deg, #02010124 0%, #01060C 95%);
   height: 100%;
@@ -25,7 +23,7 @@ img{
   position: absolute;
   z-index: 5;
   top: 50%;
-  left: 9%;
+ left: 12%;
 }
 .head h3{
   color: white;

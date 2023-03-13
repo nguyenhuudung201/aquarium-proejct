@@ -545,10 +545,10 @@
 .gallery-e8 img{
   object-position: center;
   object-fit: cover;
-  height: 100%;
+  height: 330px;
 }
 .gallery-e8 ul{
-  padding: 20px;
+  padding: 40px;
 }
 
 .gallery-e8 p{
@@ -786,17 +786,19 @@
 }
 .comment{
   text-align: left;
-  padding:10px 0px;
 }
 .comment-full p{
-  font-size: 16px;
+  font-size: 18px;
 }
 .comment li:last-child {
   padding-top: 15px;
 }
 .comment p{
-  font-size: 16px;
+  font-size: 17px;
   font-style: oblique;
+}
+.comment ul{
+  margin-bottom: 0px;
 }
 .comment h5{
   font-weight: 600;

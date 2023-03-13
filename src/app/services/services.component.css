@@ -233,7 +233,6 @@
 }
 .comment{
   text-align: left;
-  padding:10px 0px;
 }
 .comment li:last-child {
   padding-top: 15px;
@@ -404,10 +403,13 @@ svg{
 .gallery-e8 img{
   object-position: center;
   object-fit: cover;
-  height: 100%;
+  height: 330px;
 }
 .gallery-e8 ul{
-  padding: 20px;
+  padding: 40px;
+}
+.gallery-e8 ul{
+  margin-bottom: 0px;
 }
 .pt{
   padding-top: 100px;
